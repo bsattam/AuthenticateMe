@@ -1,12 +1,20 @@
 import React from 'react';
 import styles from '../styles/Footer.module.css';
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 
 export default function Footer() {
   return (
-  <a className={`${styles.footer} text-secondary
-      text-center`} href='https://github.com/bsattam'>
-      Created By: Sattam Bandyopadhyay
-  </a>
+    <div className='d-flex justify-content-evenly align-items-center m-auto w-25'>
+      <a className={`${styles.footer} text-secondary
+        text-center`} href='https://bsattam.github.io/Portfolio/'>
+        Created By: Sattam Bandyopadhyay
+      </a>
+      <IconContext.Provider value={{color: '#8bb4b2'}}>
+        <a href='https://www.linkedin.com/in/sattam-bandyopadhyay/'><BsLinkedin/></a>
+        <a href='https://github.com/bsattam'><BsGithub/></a>
+      </IconContext.Provider>
+    </div>
   ) 
 }
