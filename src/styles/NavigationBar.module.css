@@ -8,9 +8,7 @@
 }
 
 .navButton:hover{
-    border: 1px solid #00fff2;
-    border-radius: 20px;
-    box-shadow: 0 3px 5px rgba(255,255,255, 0.5);
+    color: #a04f75 !important;
 }
 
 .navToggleButton{

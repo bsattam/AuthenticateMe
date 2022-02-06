@@ -21,22 +21,22 @@ export default function NavigationBar() {
                     !isLoading && (
                     <Nav className="ms-auto">
                         { !isAuthenticated && <>
-                        <Nav.Link className={`{styles.navButton} me-3`}>
-                            <div className={util.text}
+                        <Nav.Link className={`me-3`}>
+                            <div className={`${util.text} ${styles.navButton}`}
                             onClick={() => loginWithRedirect()}>
                                 Login
                             </div>
                         </Nav.Link>
                         </> }
                         { isAuthenticated && <>
-                        <Nav.Link className={`{styles.navButton} me-3`}>
-                            <div className={util.text}
+                        <Nav.Link className={`me-3`}>
+                            <div className={`${util.text} ${styles.navButton} `}
                                 onClick={()=>logout()}>
                                 Log Out
                             </div>
                         </Nav.Link>
                         </> }
-                        <Nav.Link className={`${util.text}`}
+                        <Nav.Link className={`${util.text} ${styles.navButton}`}
                         href='https://github.com/bsattam/AuthenticateMe'>
                             Github
                         </Nav.Link>
