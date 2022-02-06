@@ -21,7 +21,7 @@ function App() {
         }
         {
           !isAuthenticated && !isLoading && <>
-            <div className=' d-flex justify-content-center'>
+            <div className=' d-flex justify-content-center ms-lg-5'>
               <img src={logo} className={styles.logoImage} alt=''/>
             </div>
             <Login/>
