@@ -4,7 +4,7 @@ import {Navbar, Nav, Container} from 'react-bootstrap';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 import styles from '../styles/NavigationBar.module.css';
-import util from '../styles/Utilities.module.css';
+import logo from '../images/logo.svg';
 
 export default function NavigationBar() {
     const { isLoading } = useAuth0();
@@ -12,7 +12,9 @@ export default function NavigationBar() {
     return (
         <Navbar expand="lg"  className={styles.navigation}>
             <Container>
-                <Navbar.Brand className={util.text}>AuthenticateMe</Navbar.Brand>
+                <Navbar.Brand href='/'>
+                    <img src={logo} className={styles.logo}/>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 {

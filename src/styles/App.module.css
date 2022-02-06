@@ -1,0 +1,25 @@
+.appGlassCanvas{
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    border: 1px solid #00fff2;
+    box-shadow: 0 3px 5px rgba(255,255,255, 0.5);
+    width: 60vw;
+    height: 75vh;
+}
+
+.logoImage{
+    width: 200px;
+    height: 200px;
+}
+
+
+@media only screen and (max-width:1200px){
+    .logoImage{
+        width: 125px;
+        height: 125px;
+    }
+
+    .appGlassCanvas{
+        width: 80vw;
+    }
+}
