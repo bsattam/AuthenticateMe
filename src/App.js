@@ -3,6 +3,7 @@ import Login from './components/Login.js';
 import UserDetails from './components/UserDetails.js';
 import styles from './styles/App.module.css';
 import logo from './images/logo.svg';
+import PuffLoader from "react-spinners/PuffLoader";
 
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -12,11 +13,19 @@ function App() {
       <div className={`${styles.appGlassCanvas} m-auto mt-5
             d-flex flex-column flex-lg-row justify-content-evenly
             align-items-center`}>
-        <div className=' d-flex justify-content-center'>
-          <img src={logo} className={styles.logoImage}/>
-        </div>
         {
-          !isAuthenticated && !isLoading && <Login/>
+          isLoading && <>
+            <PuffLoader color='#00fff2'
+              size={200} loading={isLoading}/>
+          </>
+        }
+        {
+          !isAuthenticated && !isLoading && <>
+            <div className=' d-flex justify-content-center'>
+              <img src={logo} className={styles.logoImage}/>
+            </div>
+            <Login/>
+          </>
         }
         {
           isAuthenticated && !isLoading && <UserDetails/>
