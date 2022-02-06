@@ -15,7 +15,7 @@ const { loginWithRedirect } = useAuth0();
         <div className={`my-2`}>So, what are you waiting for?</div>
         <div className={`${utils.fontSize2}`}>Let's get started!</div>
         <div onClick={()=>{loginWithRedirect()}}>
-            <img src={name} className={`${styles.nameImage} mt-5 p-2`}/>
+            <img src={name}  alt='' className={`${styles.nameImage} mt-5 p-2`}/>
         </div>
     </div>
   )

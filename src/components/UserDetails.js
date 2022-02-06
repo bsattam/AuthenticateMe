@@ -16,7 +16,7 @@ export default function UserDetails() {
                 <div className={`d-flex flex-column justify-content-evenly
                     flex-md-row align-items-center w-100`}>
                     <div>
-                        <img src={`${picture}`} className='rounded-circle'
+                        <img alt='' src={`${picture}`} className='rounded-circle'
                         width='150' height='150'/>
                     </div>
                     <div className={`my-3 ${utils.fontSize1}`}>

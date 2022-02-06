@@ -12,7 +12,7 @@ export default function NavigationBar() {
         <Navbar expand="lg"  className={styles.navigation}>
             <Container>
                 <Navbar.Brand href='/'>
-                    <img src={logo} className={styles.logo}/>
+                    <img  alt='' src={logo} className={styles.logo}/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" 
                 className={styles.navToggleButton}/>
