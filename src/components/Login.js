@@ -8,7 +8,7 @@ export default function Login() {
 const { loginWithRedirect } = useAuth0();
   return( 
   <div className={`d-flex flex-column 
-  align-items-center ${utils.text2}`}>
+  align-items-center my-4 ${utils.text2}`}>
         <div className={`${styles.heading} display-2`}>Welcome</div>
         <div className={`${utils.fontSize1} w-75 text-center`}>This website helps the user to 
             authenticate using Auth0 API</div>

@@ -9,7 +9,7 @@ export default function UserDetails() {
     const {name, picture, email, nickname} = user;
     return ( 
             <div className={`d-flex flex-column align-items-center
-                justify-content-between w-75 h-75 ${utils.text2}`}>
+                justify-content-between w-75 h-75 my-4 ${utils.text2}`}>
                 <div className={`text-center display-4 ${styles.heading}`}>
                     Authenticated Successfully!
                 </div>

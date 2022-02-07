@@ -10,8 +10,3 @@
 .navButton:hover{
     color: #fcff68 !important;
 }
-
-.navToggleButton{
-    border-radius: 50%;
-    background-color: #00fff2;
-}

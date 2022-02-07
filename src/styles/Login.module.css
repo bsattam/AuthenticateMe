@@ -14,3 +14,9 @@
 .heading{
     font-family: 'Carattere', cursive;
 }
+
+@media only screen and (max-width: 768px) {
+    .nameImage{
+        width: 175px;
+    }
+}
