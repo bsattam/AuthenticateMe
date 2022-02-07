@@ -8,16 +8,22 @@ const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENTID;
 
 export default function Layout(props) {
-  return <Auth0Provider
-    domain = {domain}
-    clientId = {clientId}
-    redirectUri={window.location.origin}
-  >
-      <div className={`${styles.layout} d-flex flex-column 
-      justify-content-between`}>
-        <NavigationBar/>
-        {props.children}
-        <Footer/>
-      </div>
-  </Auth0Provider>;
+  return ( <>
+    <Auth0Provider
+      domain = {domain}
+      clientId = {clientId}
+      redirectUri={window.location.origin}
+    >
+
+        <div className={`${styles.layout} d-flex flex-column 
+        justify-content-between`}>
+
+          <NavigationBar/>
+          {props.children}
+          <Footer/>
+          
+        </div>
+    </Auth0Provider>;
+  </>
+  )
 }

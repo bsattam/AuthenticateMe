@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div className={`flex-grow-1`}>
+      
       <div className={`${styles.appGlassCanvas} m-auto my-3
             d-flex flex-column flex-lg-row justify-content-evenly
             align-items-center`}>
