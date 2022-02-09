@@ -5,5 +5,5 @@ export default function Profile() {
     const { user } = useAuth0();
     return <div>
         {JSON.stringify(user)}
-    </div>;
+    </div>
 }

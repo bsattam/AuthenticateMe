@@ -11,4 +11,4 @@ ReactDOM.render(
     </Layout>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)

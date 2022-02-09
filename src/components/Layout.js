@@ -23,7 +23,7 @@ export default function Layout(props) {
           <Footer/>
           
         </div>
-    </Auth0Provider>;
+    </Auth0Provider>
   </>
   )
 }
